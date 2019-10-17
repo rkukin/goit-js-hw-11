@@ -1,20 +1,21 @@
 "use strict";
 
-
 const delay = ms => {
   // Твой код
-// return new Promise((resolve) => {
-//   setTimeout(() => {
-//     resolve(ms);
-//   }, ms);
-// }) 
+  // return new Promise((resolve) => {
+  //   setTimeout(() => {
+  //     resolve(ms);
+  //   }, ms);
+  // })
 
-const callback = function(resolve, reject){
-  setTimeout(()=>{resolve(ms)},ms)
-}
+  const callback = function(resolve, reject) {
+    setTimeout(() => {
+      resolve(ms);
+    }, ms);
+  };
 
-const promise = new Promise (callback);
-return promise;
+  const promise = new Promise(callback);
+  return promise;
 };
 
 const logger = time => console.log(`Resolved after ${time}ms`);
