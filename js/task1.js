@@ -19,7 +19,7 @@ const randomIntegerFromInterval = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
-const changeBg =() => {
+const changeBg = () => {
 body.style.backgroundColor = colors[randomIntegerFromInterval(0,colors.length)]
 }
 
